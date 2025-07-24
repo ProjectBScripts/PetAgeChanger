@@ -105,11 +105,11 @@ local function updateGUI()
 	end
 end
 
--- On button click, wait 10s then change name visually
+-- On button click, wait 5s then change name visually
 button.MouseButton1Click:Connect(function()
 	local tool = getEquippedPetTool()
 	if tool then
-		for i = 10, 1, -1 do
+		for i = 5, 1, -1 do
 			button.Text = "Changing Age in " .. i .. "..."
 			task.wait(1)
 		end
